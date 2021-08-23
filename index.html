@@ -19,7 +19,7 @@
     <div class="container d-flex flex-column align-items-center justify-content-center">
         <h2>Temperature Converter</h2>
 
-        <!-- convertion -->
+        <!-- converter -->
         <div class="content d-flex align-items-center mt-4 mb-4 border">
             <div class="d-flex">
                 <div class="from d-flex flex-column align-items-center">
@@ -54,9 +54,38 @@
     </div>
     
     <!-- Optional JavaScript -->
-    <script src="../src/scripts/index.js"></script>
-    <!-- <script src="../src/scripts/converter.js"></script> -->
+    <!-- <script type="module" src="/src/scripts/index.js"></script> -->
+    <script src="/src/scripts/converter.js"></script>
+    <script>
+        function emptyForm() {
+                document.getElementById("temperature").value = "";
+                document.getElementById("result").value = "";
+            }
 
+            const converter = new Converter
+            function convert() {
+                if (document.getElementById("from").value == "celcius") {
+                    const result = converter.celcius(
+                        document.getElementById("to").value,
+                        Number(document.getElementById("temperature").value)
+                    );
+
+                    document.getElementById("result").value = result;
+                } else if (document.getElementById("from").value == "farenheit") {
+                    const result = converter.farenheit(
+                        document.getElementById("to").value,
+                        Number(document.getElementById("temperature").value)
+                    );
+
+                    document.getElementById("result").value = result;
+                }
+            }
+
+            function change_color() {
+                document.body.style.backgroundColor = document.getElementById("background").value;
+            }
+    </script>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
