@@ -1,0 +1,23 @@
+{
+  "name": "frontend_homework-3_converter-temperature-js",
+  "version": "1.0.0",
+  "description": "Converter temperature celcius and farenheit using javascript and unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALFINASK/frontend_homework-3_converter-temperature-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ALFINASK/frontend_homework-3_converter-temperature-js/issues"
+  },
+  "homepage": "https://github.com/ALFINASK/frontend_homework-3_converter-temperature-js#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}

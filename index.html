@@ -27,7 +27,7 @@
                         <option value="celcius">Celcius</option>
                         <option value="farenheit">Farenheit</option>
                     </select>
-                    <input type="text" class="form-control mt-4 text" id="temperature" onkeyup="convert()" placeholder="Enter Temperature">
+                    <input type="number" class="form-control mt-4 text" id="temperature" onkeyup="convert()" placeholder="Enter Temperature">
                 </div>
 
                 <div class="text ml-4 mr-4">TO</div>
@@ -37,7 +37,7 @@
                         <option value="celcius">Celcius</option>
                         <option value="farenheit">Farenheit</option>
                     </select>
-                    <input type="text" class="form-control mt-4 text" id="result" placeholder="Result" readonly>
+                    <input type="number" class="form-control mt-4 text" id="result" placeholder="Result" readonly>
                 </div>
             </div>
         </div>
@@ -48,13 +48,14 @@
                 <label class="text mr-sm-3">Background color</label>
                 <input type="text" class="form-control" id="background" placeholder="Enter color">
             </div>
-            <button type="button" class="btn btn-primary mb-2" onclick="change_color()">Change</button>
+            <button type="button" class="btn btn-info mb-2" onclick="change_color()">Change</button>
         </form>
 
     </div>
     
     <!-- Optional JavaScript -->
-    <script src="/src/scripts/index.js"></script>
+    <script src="../src/scripts/index.js"></script>
+    <!-- <script src="../src/scripts/converter.js"></script> -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

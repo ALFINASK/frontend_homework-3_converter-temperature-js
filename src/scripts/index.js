@@ -1,3 +1,5 @@
+// const { Converter } = require("./converter");
+
 class Converter {
     constructor() {
     }
