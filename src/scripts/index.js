@@ -1,4 +1,4 @@
-class Convert {
+class Converter {
     constructor() {
     }
 
@@ -19,6 +19,30 @@ class Convert {
         if (to == "celcius") {
             return (number - 32) * (5 / 9);
         }
+    }
+}
+
+function emptyForm() {
+    document.getElementById("temperature").value = "";
+    document.getElementById("result").value = "";
+}
+
+const converter = new Converter
+function convert(){
+    if (document.getElementById("from").value == "celcius") {
+        const result = converter.celcius(
+            document.getElementById("to").value,
+            Number(document.getElementById("temperature").value)
+        );
+
+        document.getElementById("result").value = result;
+    } else if (document.getElementById("from").value == "farenheit"){
+        const result = converter.farenheit(
+            document.getElementById("to").value,
+            Number(document.getElementById("temperature").value)
+        );
+
+        document.getElementById("result").value = result;
     }
 }
 

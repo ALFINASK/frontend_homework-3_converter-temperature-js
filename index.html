@@ -16,34 +16,34 @@
     <link rel="stylesheet" href="/src/styles/index.css" />
 </head>
 <body>
-    <div class="container d-flex flex-column align-items-center justify-content-center border">
-        <h2 class="text">Temperature Converter</h2>
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+        <h2>Temperature Converter</h2>
 
         <!-- convertion -->
         <div class="content d-flex align-items-center mt-4 mb-4 border">
             <div class="d-flex">
                 <div class="from d-flex flex-column align-items-center">
-                    <select class="form-select text">
+                    <select class="form-select text" id="from" onchange="emptyForm()">
                         <option value="celcius">Celcius</option>
-                        <option value="fahrenheit">Farenheit</option>
+                        <option value="farenheit">Farenheit</option>
                     </select>
-                    <input type="text" class="form-control" id="background" placeholder="Enter Temperature">
+                    <input type="text" class="form-control mt-4 text" id="temperature" onkeyup="convert()" placeholder="Enter Temperature">
                 </div>
 
                 <div class="text ml-4 mr-4">TO</div>
 
                 <div class="to d-flex flex-column align-items-center">
-                    <select class="form-select text">
+                    <select class="form-select text" id="to" onchange="emptyForm()">
                         <option value="celcius">Celcius</option>
-                        <option value="fahrenheit">Farenheit</option>
+                        <option value="farenheit">Farenheit</option>
                     </select>
-                    <input type="text" class="form-control" id="background" placeholder="Result" readonly>
+                    <input type="text" class="form-control mt-4 text" id="result" placeholder="Result" readonly>
                 </div>
             </div>
         </div>
 
         <!-- change color -->
-        <form class="form-inline">
+        <form class="form-inline mt-4">
             <div class="form-group mr-sm-3 mb-2">
                 <label class="text mr-sm-3">Background color</label>
                 <input type="text" class="form-control" id="background" placeholder="Enter color">

@@ -1,3 +1,7 @@
+body {
+  background-color: #ffffff;
+}
+
 .container {
   width: 80%;
   height: auto;
@@ -6,9 +10,7 @@
 
 .content {
   width: 60%;
-  border: 2px solid black;
-  height: 30vh;
-
+  height: 40vh;
   justify-content: space-evenly;
 }
 
@@ -31,9 +33,10 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 40px;
-  letter-spacing: 0em;
 }
 
 h2 {
-  font-size: 40px;
+  color: #8f8383;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
